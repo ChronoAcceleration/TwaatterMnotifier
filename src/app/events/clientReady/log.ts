@@ -1,9 +1,7 @@
+import { EventHandler } from 'commandkit';
 import { Logger } from 'commandkit/logger';
 
-/**
- * @type {import('commandkit').EventHandler<'clientReady'>}
- */
-const handler = async (client) => {
+const handler: EventHandler<'clientReady'> = async (client) => {
   Logger.info(`Logged in as ${client.user.username}!`);
 };
 
