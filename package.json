@@ -11,6 +11,11 @@
     "start": "commandkit start",
     "format": "prettier --write \"src/**/*.{js,ts}\""
   },
-  "devDependencies": {},
-  "dependencies": {}
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  },
+  "dependencies": {
+    "commandkit": "^1.2.0-rc.3",
+    "discord.js": "^14.22.0"
+  }
 }
