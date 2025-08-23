@@ -39,7 +39,7 @@ function buildConfirmationMessage(collected: CollectedLinks): string | null {
 }
 
 async function beginTrack(collected: CollectedLinks, message: Message) {
-    Logger.log('process comp')
+    Logger.log('process comp');
 }
 
 const handler: EventHandler<'messageCreate'> = async (message) => {
