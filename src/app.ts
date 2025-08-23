@@ -1,7 +1,8 @@
-import { Client } from 'discord.js';
+import { Client, GatewayIntentBits, Partials } from 'discord.js';
 
 const client = new Client({
-  intents: [],
+  intents: [ GatewayIntentBits.DirectMessages, GatewayIntentBits.MessageContent ],
+  partials: [ Partials.Channel ]
 });
 
 export default client;
